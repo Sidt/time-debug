@@ -1,7 +1,7 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: schmidt
+ * @author Sebastian Schmidt
+ * @author-URL: https://github.com/Sidt
  * Date: 22.04.17
  * Time: 21:52
  */
