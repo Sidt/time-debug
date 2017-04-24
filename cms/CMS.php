@@ -4,7 +4,7 @@
  * @author-URL: https://github.com/Sidt
  * Date: 22.04.17
  */
-require_once('../Config.php');
+require_once(__DIR__ . '/../Config.php');
 
 /**
  * Class CMS
