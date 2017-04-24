@@ -11,7 +11,7 @@ require_once('Runner.php');
 require_once('Statistic.php');
 
 $cmsType = Config::TYPE;
-require_once("$cmsType.php");
+require_once("cms/$cmsType.php");
 
 $cmsBaseClass = new $cmsType(Config::CMS_ROOT);
 
