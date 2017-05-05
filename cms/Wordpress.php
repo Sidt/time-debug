@@ -16,6 +16,7 @@ class Wordpress extends CMS
 
     const LOAD_WP = "/wp-load.php";
     const PLUGIN_PHP = "/wp-admin/includes/plugin.php";
+    const PLUGABBLE_PHP = "/wp-includes/pluggable.php";
     const PATH_WP_CONTENT = '/wp-content';
     const PATH_PLUGINS = '/plugins';
     protected $pathRoot;
@@ -48,6 +49,7 @@ class Wordpress extends CMS
         $this->pathPlugins = $this->pathRoot . self::PATH_WP_CONTENT . self::PATH_PLUGINS;
 
         // load some files required to work with plugins functions.
+        require_once($this->pathRoot . self::PLUGABBLE_PHP);
         require_once($this->pathRoot . self::LOAD_WP);
         require_once($this->pathRoot . self::PLUGIN_PHP);
 
